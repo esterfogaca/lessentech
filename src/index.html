@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lessen Tech</title>
+    <link rel="stylesheet" href="sass/main.scss">
+
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo--mobile" src="./assets/logo-mobile.png" alt="Opinid Portugal">
+        <img class="header__logo--desktop" src="./assets/logo-opinid.svg" alt="Opinid Portugal">
+        <ul class="header__social">
+            <li class="header__social__item"><a href="#"><img src="./assets/instagram.svg" alt="Instagram"></a></li>
+            <li class="header__social__item"><a href="#"><img src="./assets/facebook.svg" alt="Facebook"></a></li>
+            <li class="header__social__item"><a href="#"><img src="./assets/pinterest.svg" alt="Pinterest"></a></li>
+            <li class="header__social__item"><a href="#"><img src="./assets/twitter.svg" alt="Twitter"></a></li>
+        </ul>    
+    </header>
+
+    <main>
+        <section class="content">
+             <h1 class="main__title">
+             Entenda como escolher a melhor clínica de implantes dentários:
+             </h1>
+            <p class="main__subtitle">Saiba o que deve considerar na hora de escolher a clínica que vai transformar a sua vida e o seu sorriso.</p>
+                <ul class="main__list">
+                    <li><a class="main__list__itens">Experts em Implantologia</a></li>
+                    <li><a class="main__list__itens">Recomendada pelos portugueses</a></li>
+                    <li><a class="main__list__itens">Acompanhamento profissional</a></li>
+                </ul>
+        </section>
+        <section class="form"> 
+        <p class="form__title">Preencha seus dados e descarregue gratuitamente o nosso ebook</p>
+            <form action="" method="">
+                <div>
+                    <label class="form__label form__label--name" for="nome">Nome *</label>
+                    <input id="name" class="form__input form__input--name" type="text" placeholder="Nome *"/>
+                </div>
+                <div>
+                    <label class="form__label form__label--email" for="email">Email *</label>
+                    <input id="email" class="form__input form__input--email" type="email" placeholder="Email *"/>
+                </div>
+                <div class="form__adress">
+                    <label class="form__label form__label--adress" for="closest-adress">Clinica mais próxima de si *</label>
+                    <input id="adress" class="form__input form__input--adress" type="closest-adress" placeholder="" />
+                        <select class="city__select" name="city-list" form="city-list">
+                            <option value="">Selecione uma opção</option>
+                            <option value="Lisboa">Lisboa</option>
+                            <option value="Porto">Porto</option>
+                        </select>
+                </div>
+                <div class="form__telephone">
+                    <select class="form__select" name="country" form="country">
+                        <option value="PT">PT(+351)</option>
+                        <option value="IE">IE(+353)</option>
+                    </select>
+                            <label class="form__label form__label--telephone" for="telephone">Telemóvel *</label>
+                            <input id="telephone" class="form__input form__input--telephone" type="telephone" placeholder="Telemóvel *"/>
+                </div>
+                <div class="form__terms">
+                    <input id="terms" class="form__input form__input--terms" type="checkbox" id="terms" name="terms" checkbox>
+                    <label class="form__label form__label--terms" for="terms">Li e Aceito os Termos e Condições</label>
+                </div>
+                <div class="form__btn">
+                    <button class="form__button" onclick="window.location.href = 'https://pnid.pt/nutricao/fale-com-experts/successPage.html​.'">DESCARREGUE O NOSSO EBOOK</button>
+                </div>
+                </form>
+            </form>
+        </section>
+    </main>
+
+    <footer class="container footer">
+        <img class="footer__logo-white" src="./assets/logo-white.svg" alt="Swiss Dental Services">
+            <ul class="footer__list">
+                        <li><a>Institucional</a></li>
+                        <li><a>Clínicas</a></li>
+                        <li><a>Tratamentos</a></li>
+                        <li><a>Media</a></li>
+                        <li><a>A nossa equipe</a></li>
+                        <li><a>Contactos</a></li>
+                    </ul>
+                <p class="footer__copyright">
+                    © Swiss Dental Services. Todos os direitos reservados.
+                    SDS - Portugal Sociedade Suíça de Serviços Odontológicos,
+                    Lda. Rua Santos Pousada, 441 – Sala 106, 4000-486 Porto
+                    Registo na ERS no 22814. Registo de estabelecimento
+                    prestador de saúde no E135067. Licença de funcionamento 
+                    no 13744/2017.
+                </p>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

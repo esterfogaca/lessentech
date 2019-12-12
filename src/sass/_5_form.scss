@@ -1,0 +1,104 @@
+.form {
+    background-color: #FB3A41;
+    color: #ffffff;
+    padding: 5px 25px 10px 10px;
+    margin-bottom:45px; 
+    margin: 0;
+
+    &__title{
+        text-align: center;
+        color:#ffffff;
+        padding: .3125rem .3125rem;
+    }
+
+    &__input {
+        background-color:#FB3A41;
+        color: #ffffff;
+        font-size:.875rem;
+        padding: .625rem .625rem .625rem .4rem;
+        display:block;
+        width:100%;
+        border:none;
+        border-bottom:1px solid #ffffff;
+
+        &:focus {
+            outline:none;
+        }
+
+        &::placeholder {
+            color: white;
+        }
+
+        &--address::placeholder,
+        &--telephone::placeholder {
+            position: relative;
+            left: 5rem;
+        }
+
+        &:valid ~ label {
+            visibility: visible;
+            top: 0;
+        }
+      }
+
+
+    &__select {
+        position: absolute;
+        top: 1.6rem;
+        color: #ffffff;
+        display: block;
+    }
+
+    &__label {
+        visibility: hidden;
+        color: #ffffff; 
+        font-size:.875rem;
+        font-weight:normal;
+        position: relative;
+        pointer-events:none;
+        top: 1.75rem;
+        left:.3125rem;
+        transition:0.2s ease all; 
+      }
+
+    &__terms {
+        display: grid;
+        grid-template-columns: 1rem auto;
+        align-items: center;
+        margin: 2rem 0;
+      }
+
+    &__adress {
+        position: relative;
+    }
+
+    &__telephone {
+        position: relative;
+    }
+
+    &__label--terms {
+        top: 0;
+    }
+
+    &__button {
+        cursor: pointer;
+        display: block;
+        background:#6FC47E;
+        color: #ffffff;
+        margin: 0 auto;
+        border: none;
+        border-radius: 5rem;
+        padding: 10px 30px;
+     }
+
+     &__btn {
+         margin-bottom: 15px;
+     }
+}
+
+.city__select {
+    position: absolute;
+    top: 1.8rem;
+    color: #ffffff;
+    display: block;
+}

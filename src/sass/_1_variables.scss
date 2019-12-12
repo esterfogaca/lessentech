@@ -1,0 +1,32 @@
+
+@font-face {
+    font-family: "Camber";
+    src: url('../assets/camber/Camber-Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Camber";
+    src: url('../assets/camber/Camber-Md.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Camber";
+    src: url('../assets/camber/Camber-Bd.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+$media-query-mobile: 350px;
+$media-query-tablet: 720px;
+$media-query-desktop: 1200px;
+
+$font-family-body: "Camber";
+$font-size-mobile: 4.5vw;
+$font-size-tablet: 2.5vw;
+$font-size-desktop: 16px;
+
+$background-main: #FFFFFF;

@@ -1,0 +1,32 @@
+.header {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.header__logo--mobile {
+    width: 3.25rem;
+    height: auto;
+    place-self: center;
+}
+
+.header__logo--desktop{
+    display: none;
+}
+
+.header__social {
+    display: flex;
+    list-style-type: none;
+    width: fit-content;
+    margin: 1.5625rem;
+    padding: 0;
+}
+
+.header__social__item {
+    margin-left: 1.1875rem;
+    width: 2.125rem;
+    height: auto;
+}
+
+.header__social__item img {
+    width: 100%;
+}
