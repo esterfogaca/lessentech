@@ -2,6 +2,17 @@
     background-color:#278048;
     color: #ffffff;
     padding-bottom: 3rem;
+
+    @media screen and (min-width: $media-query-desktop) {
+        display: grid;
+        grid-template-columns: 30% 50% 20%;
+        place-items: center;
+        padding-bottom: 2.8rem;
+    }
+
+    @media screen and (min-width: 1600px) {
+        padding-bottom: 1rem;
+    }
 }
 
 .footer__logo-white {
@@ -9,6 +20,12 @@
     margin: 0 auto;
     padding: 2rem;
     height: 2.75rem;
+
+    @media screen and (min-width: $media-query-desktop) {
+        width: 100%;
+        height: auto;
+        max-width: 31rem;
+    }
 }
 
 .footer__list {
@@ -23,6 +40,9 @@
     display: flex;
     justify-content: space-around;
 }
+    @media screen and (min-width: $media-query-desktop) {
+        width: 100%;
+    }
 }
 
 .footer__copyright {
@@ -31,4 +51,9 @@
     padding: 1.25rem 1.5625rem 0px 1.875rem;
     line-height: 3ch;
     text-align: justify;
+
+    @media screen and (min-width: $media-query-desktop) {
+        max-width: 80%;
+        font-size: .75rem;
+    }
 }

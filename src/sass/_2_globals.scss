@@ -8,6 +8,10 @@ html {
     }
     
     @media screen and (min-width: $media-query-desktop) {
+        font-size: 0.8638vw;
+    }
+
+    @media screen and (min-width: 1600px) {
         font-size: $font-size-desktop;
     }
 }
@@ -16,8 +20,16 @@ body {
     width: 100%;
     margin: 0;
     overflow-x: hidden;
-}
 
-main {
-    background-color: $background-main;
+    @media screen and (min-width: $media-query-desktop) {
+        background-image: url("../assets/red-content.png");
+        background-size: auto 100%;
+        background-position: 45vw;
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (min-width: 1600px) {
+        background-position: right;
+
+    }
 }

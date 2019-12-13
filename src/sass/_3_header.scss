@@ -22,9 +22,11 @@
 
     @media screen and (min-width: $media-query-tablet) {
         display: block;
-        width: 20.5rem;
+        width: 20.5625rem;
         height: auto;
-        place-self: center;
+        margin-left: 2rem;
+        align-self: center;
+        justify-content: start;
     }
 }
 
@@ -34,6 +36,12 @@
     width: fit-content;
     margin: 1.5625rem;
     padding: 0;
+
+    @media screen and (min-width: $media-query-desktop) {
+        filter: brightness(10);
+        align-self: center;
+        justify-self: right;
+    }
 }
 
 .header__social__item {
