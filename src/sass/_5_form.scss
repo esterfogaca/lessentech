@@ -1,12 +1,31 @@
 .form {
     background-color: #FB3A41;
     color: #ffffff;
-    padding: 5px 25px 10px 10px;
-    margin-bottom:45px; 
+    padding: .3125rem 1.5625rem .625rem .625rem;
+    margin-bottom:2.8125rem; 
     margin: 0;
+
+    @media screen and (min-width: $media-query-tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        padding: 2rem;
+    }
+
+    .tooth-icon {
+        display: none;
+
+        @media screen and (min-width: $media-query-tablet) {
+            display: block;
+            width: 100%;
+            height: auto;
+            place-self: center;
+        }
+    }
 
     &__title{
         text-align: center;
+        font_size: 1rem;
         color:#ffffff;
         padding: .3125rem .3125rem;
     }
@@ -19,7 +38,7 @@
         display:block;
         width:100%;
         border:none;
-        border-bottom:1px solid #ffffff;
+        border-bottom:.1rem solid #ffffff;
 
         &:focus {
             outline:none;
@@ -45,24 +64,35 @@
     &__select {
         position: absolute;
         top: 1.6rem;
+        font-size: .875rem;
         color: #ffffff;
         display: block;
+
+        &:focus {
+            outline:none;
+        }
     }
 
     &__label {
+        pointer-events:none;
         visibility: hidden;
         color: #ffffff; 
         font-size:.875rem;
         font-weight:normal;
         position: relative;
-        pointer-events:none;
         top: 1.75rem;
         left:.3125rem;
         transition:0.2s ease all; 
+
+        &--adress {
+            visibility: visible;
+            top: .5rem;
+        }
       }
 
     &__terms {
         display: grid;
+        font-size:.875rem;
         grid-template-columns: 1rem auto;
         align-items: center;
         margin: 2rem 0;
@@ -84,21 +114,27 @@
         cursor: pointer;
         display: block;
         background:#6FC47E;
+        font-size: 1rem;
         color: #ffffff;
         margin: 0 auto;
         border: none;
         border-radius: 5rem;
-        padding: 10px 30px;
+        padding: .625rem 1.875rem;
      }
 
      &__btn {
-         margin-bottom: 15px;
+         margin-bottom: .9375rem;
      }
 }
 
 .city__select {
     position: absolute;
     top: 1.8rem;
+    font-size: .875rem;
     color: #ffffff;
     display: block;
+
+    &:focus {
+        outline:none;
+    }
 }

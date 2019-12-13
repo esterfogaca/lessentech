@@ -1,14 +1,21 @@
 html {
     font-family: $font-family-body;
-    font-size: 3.96vw;
+    font-size: $font-size-mobile;
     color: #3E3E3E;
+
+    @media screen and (min-width: $media-query-tablet) {
+        font-size: $font-size-tablet;
+    }
+    
+    @media screen and (min-width: $media-query-desktop) {
+        font-size: $font-size-desktop;
+    }
 }
 
 body {
     width: 100%;
     margin: 0;
     overflow-x: hidden;
-
 }
 
 main {

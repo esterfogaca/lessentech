@@ -1,16 +1,31 @@
 .header {
     display:grid;
     grid-template-columns:1fr 1fr;
+
+    @media screen and (min-width: $media-query-tablet) {
+        grid-template-columns: 2fr 1fr;
+    }
 }
 
 .header__logo--mobile {
     width: 3.25rem;
     height: auto;
     place-self: center;
+
+    @media screen and (min-width: $media-query-tablet) {
+        display: none; 
+    }
 }
 
 .header__logo--desktop{
     display: none;
+
+    @media screen and (min-width: $media-query-tablet) {
+        display: block;
+        width: 20.5rem;
+        height: auto;
+        place-self: center;
+    }
 }
 
 .header__social {

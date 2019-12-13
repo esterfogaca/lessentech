@@ -2,22 +2,54 @@
     font-size: 1.25rem;
     font-weight: 900;
     text-align: center;
+
+    @media screen and (min-width: $media-query-tablet) {
+        font-size: 2.1875rem;
+    }
 }
 
 .main__subtitle {
     text-align: center;
     margin: 0 auto;
     width: 80%;
+
+    @media screen and (min-width: $media-query-tablet) {
+        font-size: 1.625rem;
+        margin-left: 2rem;
+        text-align: left;
+        justify-self: start;
+        width: auto;
+    }
 }
 
 .main__list{
     padding: .625rem 3.125rem;
     margin-left: 2.5rem;
     color: #777777;
+
+    @media screen and (min-width: $media-query-tablet) {
+        font-size: 1.25rem;
+        margin: 0;
+        padding: unset;
+        align-self: start;
+    }
 }
 
 .main__list__itens {
     margin-bottom: 0.8125rem;
     text-decoration: none;
     line-height: 3ch;
+
+    @media screen and (min-width: $media-query-tablet) {
+        line-height: 3.5ch;
+    }
+}
+
+.content__container {
+    @media screen and (min-width: $media-query-tablet) {
+        display: grid;
+        grid-template-columns: 51% 49%;
+        gap: 2.5rem;
+        padding-bottom: 2rem;
+    }
 }
